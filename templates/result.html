@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Результат</title>
+</head>
+<body>
+    <h1>Самые частые слова в файле:</h1>
+    <ul>
+        {% for word, count in most_common_words %}
+            <li>{{ word }} ({{ count }} раз)</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
